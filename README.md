@@ -34,11 +34,14 @@ http://localhost:5000/yt?url=https://www.youtube.com/watch?v=mEBZ3IlF1TU
 
 Note 
 
+Vi tri luu
 Nơi lưu video Facebook khi tải xong của downloadfb ở dòng số 8  let loiluu='D:/image';
 
 Nơi lưu video TikTok khi tải xong của downloadTK ở dòng số 15   downloadPath: path.resolve(__dirname, 'D:/image/')
 
-Nơi lưu video Youtube khi tải xong của downloadYT ở dòng số 9    let video = await ytdl(url).pipe(await fs.createWriteStream(`D:/image/${fileName}.mp4`));
+Nơi lưu video Youtube khi tải xong của downloadYT ở dòng số 9    
+
+let video = await ytdl(url).pipe(await fs.createWriteStream(`D:/image/${fileName}.mp4`));
 
 Contact
 
