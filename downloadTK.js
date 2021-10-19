@@ -4,9 +4,9 @@ const path = require('path');
 exports.dlTK = (url) => {
     return new Promise(async (resolve, reject) => {
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             args: [
-                '--window-size=190,180',
+                '--no-sandbox'
             ],
         });
         const page = await browser.newPage();
